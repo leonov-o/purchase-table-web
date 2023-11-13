@@ -1,6 +1,6 @@
 import './index.css'
 import {Main} from "@/pages";
-import {ThemeProvider} from "@/app/providers";
+import {ThemeProvider, withStore} from "@/app/providers";
 
 
 function App() {
@@ -13,4 +13,4 @@ function App() {
   )
 }
 
-export default App
+export default withStore(App)
