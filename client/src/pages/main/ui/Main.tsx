@@ -1,5 +1,6 @@
 import {Filters, Header} from "@/widgets";
 import {Container} from "@/shared";
+import {SkinTable} from "@/widgets/skinTable";
 
 
 export const Main = () => {
@@ -8,6 +9,7 @@ export const Main = () => {
             <Header/>
             <Container>
                 <Filters/>
+                <SkinTable/>
             </Container>
         </>
     );
