@@ -44,7 +44,7 @@ interface IFiltersState {
 
 const initialState: IFiltersState = {
     fromPlatform: {
-        name: 'CSGO Market',
+        name: '',
         minPrice: '',
         maxPrice: '',
         salesFilter: '',
