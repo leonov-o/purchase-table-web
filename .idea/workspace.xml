@@ -4,14 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff2d24df-241e-4558-9703-0995ebd73c99" name="Changes" comment="Add skins table">
-      <change beforePath="$PROJECT_DIR$/client/src/components/ui/select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ui/select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/entities/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/entities/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/main/ui/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/main/ui/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/filters/ui/Filters.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/filters/ui/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/header/ui/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/widgets/header/ui/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/widgets/index.ts" afterDir="false" />
+    <list default="true" id="ff2d24df-241e-4558-9703-0995ebd73c99" name="Changes" comment="Add platforms reducer, platformSelect component">
+      <change afterPath="$PROJECT_DIR$/client/src/features/categoriesCheckboxList/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/categoriesCheckboxList/ui/CategoriesCheckboxList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/categoriesCheckboxList/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/fromPlatformPriceFilter/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/fromPlatformPriceFilter/ui/FromPlatformPriceFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/fromPlatformPriceFilter/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/itemsNumberFilter/ui/ItemsNumberFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/qualitiesCheckboxList/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/qualitiesCheckboxList/ui/QualitiesCheckboxList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/qualitiesCheckboxList/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/salesFilter/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/salesFilter/ui/SalesFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/salesFilter/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/timeFilter/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/timeFilter/ui/TimeFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/timeFilter/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/toPlatformPriceFilter/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/toPlatformPriceFilter/ui/ToPlatformPriceFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/toPlatformPriceFilter/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/typesCheckboxList/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/typesCheckboxList/ui/TypesCheckboxList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/typesCheckboxList/ui/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/entities/filters/model/filters.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/entities/filters/model/filters.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/widgets/filters/ui/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/widgets/filters/ui/Filters.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -45,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/purchase-table-web/client/src/features/copyName&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/purchase-table-web/client/src/features&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,14 +76,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\purchase-table-web\client\src\features" />
       <recent name="D:\Projects\purchase-table-web\client\src\features\copyName" />
       <recent name="D:\Projects\purchase-table-web\client\src\features\hideItem" />
       <recent name="D:\Projects\purchase-table-web\client\src\features\likeItem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\purchase-table-web\client\src\features\salesFilter" />
+      <recent name="D:\Projects\purchase-table-web\client\src\features\typesCheckboxList\ui" />
+      <recent name="D:\Projects\purchase-table-web\client\src\features" />
       <recent name="D:\Projects\purchase-table-web\client\src\entities\filters" />
       <recent name="D:\Projects\purchase-table-web\client\src\app\store" />
-      <recent name="D:\Projects\purchase-table-web\client\src\assets\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +108,9 @@
       <workItem from="1699894363432" duration="62000" />
       <workItem from="1699894452253" duration="335000" />
       <workItem from="1699894805113" duration="3993000" />
-      <workItem from="1699908461285" duration="2824000" />
+      <workItem from="1699908461285" duration="3460000" />
+      <workItem from="1699998494417" duration="2528000" />
+      <workItem from="1700001096869" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing header and filter widgets">
       <created>1699794323084</created>
@@ -137,11 +161,57 @@
       <option name="project" value="LOCAL" />
       <updated>1699911212571</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implementing store for filters widget">
+      <created>1699911363289</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699911363289</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implementing store for filters widget">
+      <created>1699911400264</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699911400264</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Settings window modify">
+      <created>1699911497307</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699911497307</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add platforms reducer">
+      <created>1699911558148</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699911558148</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add platforms reducer, platformSelect component">
+      <created>1699911629680</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699911629680</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementing header and filter widgets" />
@@ -151,6 +221,10 @@
     <MESSAGE value="Add skinItem entity" />
     <MESSAGE value="Add favicon" />
     <MESSAGE value="Add skins table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add skins table" />
+    <MESSAGE value="Implementing store for filters widget" />
+    <MESSAGE value="Settings window modify" />
+    <MESSAGE value="Add platforms reducer" />
+    <MESSAGE value="Add platforms reducer, platformSelect component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add platforms reducer, platformSelect component" />
   </component>
 </project>
