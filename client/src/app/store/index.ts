@@ -1,10 +1,12 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import filtersReducer from "@/entities/filters/model/filters";
 import platformsReducer from "@/entities/platforms/model/platforms";
+import skinTableReducer from "@/entities/skinTable/model/skinTable";
 
 const rootReducer = combineReducers({
     filtersReducer,
-    platformsReducer
+    platformsReducer,
+    skinTableReducer
 })
 
 export const setupStore = () => {

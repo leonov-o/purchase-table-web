@@ -18,18 +18,18 @@ export const PlatformSelect = () => {
                 field: "name",
                 value
             }))} value={fromPlatform.name}>
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="w-[220px]">
                     <SelectValue placeholder="Площадка №1"/>
                 </SelectTrigger>
                 <SelectContent>
                     {
                         platforms.map((el) =>
-                            <SelectItem key={el.name} value={el.name}>
+                            <SelectItem key={el.name} value={el.paramName}>
                                 <div className="flex items-center">
                                     <div className="w-[20px]">
-                                        <img className="max-h-full max-w-hull" src={el.image} alt=""/>
+                                        <img className="max-h-full max-w-hull" src={"http://localhost:3000/"+el.image} alt=""/>
                                     </div>
-                                    <Separator className="mr-2 h-8 w-0.5" orientation="vertical"/>
+                                    <Separator className="mr-2 ml-2 h-8 w-0.5" orientation="vertical"/>
                                     <div className="">{el.name}</div>
                                 </div>
                             </SelectItem>
@@ -45,18 +45,18 @@ export const PlatformSelect = () => {
                 field: "name",
                 value
             }))} value={toPlatform.name}>
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="w-[220px]">
                     <SelectValue placeholder="Площадка №2"/>
                 </SelectTrigger>
                 <SelectContent>
                     {
                         platforms.map((el) =>
-                            <SelectItem key={el.name} value={el.name}>
+                            <SelectItem key={el.paramName} value={el.paramName}>
                                 <div className="flex items-center">
                                     <div className="w-[20px]">
-                                        <img className="max-h-full max-w-hull" src={el.image} alt=""/>
+                                        <img className="max-h-full max-w-hull" src={"http://localhost:3000/"+el.image} alt=""/>
                                     </div>
-                                    <Separator className="mr-2 h-8 w-0.5" orientation="vertical"/>
+                                    <Separator className="mr-2 ml-2 h-8 w-0.5" orientation="vertical"/>
                                     <div className="">{el.name}</div>
                                 </div>
                             </SelectItem>

@@ -4,7 +4,7 @@ import {ChangeEvent} from "react";
 
 interface IInputWithLabelProps {
     type?: string,
-    label: string,
+    label?: string,
     placeholder: string,
     defaultValue?: string,
     value: string,
@@ -14,9 +14,9 @@ interface IInputWithLabelProps {
 
 export const InputWithLabel = ({type, label, placeholder, defaultValue, value, onChange, className}: IInputWithLabelProps) => {
     return (
-        <div className={className}>
+        <div>
             <Label className="ml-1">{label}</Label>
-            <Input className="mt-2" type={type} placeholder={placeholder} defaultValue={defaultValue} value={value} onChange={onChange}/>
+            <Input className={"mt-2 " + className} type={type} placeholder={placeholder} defaultValue={defaultValue} value={value} onChange={onChange}/>
         </div>
     );
 };

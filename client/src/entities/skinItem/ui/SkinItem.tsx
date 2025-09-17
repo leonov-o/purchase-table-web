@@ -5,17 +5,29 @@ import {CopyName} from "@/features/copyName";
 import {LikeItem} from "@/features/likeItem";
 import {HideItem} from "@/features/hideItem";
 
+export interface ISkinItemData {
+    image: string,
+    market_hash_name: string,
+    fromPlatformPrice: number,
+    toPlatformPrice: number,
+    fromPlatformUrl: string,
+    toPlatformUrl: string,
+    fromPlatformUpdated: string,
+    toPlatformUpdated: string,
+    profit: number,
+    profitPercent: number
+}
 
-export const SkinItem = ({item}) => {
+export const SkinItem = ({market_hash_name, image, fromPlatformPrice, toPlatformPrice, fromPlatformUpdated, toPlatformUpdated, fromPlatformUrl, toPlatformUrl, profit, profitPercent}: ISkinItemData) => {
     return (
-        <TableRow key={item.market_hash_name}>
+        <TableRow key={market_hash_name}>
             <TableCell className="font-medium">
                 <div className="flex items-center">
-                    <div className="w-[80px]">
-                        <img className="max-h-full max-w-hull" src={item.image} alt=""/>
+                    <div className="w-[70px]">
+                        <img className="max-h-full max-w-full" src={image} alt=""/>
                     </div>
-                    <Separator className="mr-2 h-8 w-0.5" orientation="vertical"/>
-                    <div className="">{item.market_hash_name}</div>
+                    <Separator className="mr-2 ml-2 h-[60px] w-0.5" orientation="vertical"/>
+                    <div className="">{market_hash_name}</div>
                 </div>
             </TableCell>
             <TableCell>
@@ -28,19 +40,20 @@ export const SkinItem = ({item}) => {
                 <HideItem/>
             </TableCell>
             <TableCell className="text-center">
-                {item.market_price} ₽
+                {fromPlatformPrice} ₽
             </TableCell>
             <TableCell className="text-center">
-                {item.steam_price} ₽
+                {toPlatformPrice} ₽
             </TableCell>
             <TableCell className="text-center">
-                {(item.steam_price - item.market_price).toFixed(2)} ₽
+                {profit} ₽
             </TableCell>
             <TableCell className="text-center">
-                {(((item.market_price - item.steam_price) / item.market_price) * 100).toFixed(2)} %
+                {profitPercent} %
             </TableCell>
             <TableCell className="text-center">
-                {hoursAgo(item.updatedAt)} часов назад
+                {hoursAgo(fromPlatformUpdated)} часов назад<br/>
+                {hoursAgo(toPlatformUpdated)} часов назад
             </TableCell>
         </TableRow>
     );

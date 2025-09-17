@@ -34,17 +34,19 @@ export interface IFiltersQualities {
     bs: boolean
 }
 
-interface IFiltersState {
+export interface IFiltersState {
     fromPlatform: IFiltersPlatform,
     toPlatform: IFiltersPlatform,
     types: IFiltersTypes,
     categories: IFiltersCategories,
-    qualities: IFiltersQualities
+    qualities: IFiltersQualities,
+    sort: "fromPlatformPrice" | "toPlatformPrice" | "profit" | "profitPercent",
+    sortDirection: "asc" | "desc"
 }
 
 const initialState: IFiltersState = {
     fromPlatform: {
-        name: '',
+        name: 'steam_buy_order',
         minPrice: '',
         maxPrice: '',
         salesFilter: '',
@@ -52,7 +54,7 @@ const initialState: IFiltersState = {
         timeFilter: ''
     },
     toPlatform: {
-        name: '',
+        name: 'market_buy_order',
         minPrice: '',
         maxPrice: '',
         salesFilter: '',
@@ -80,7 +82,9 @@ const initialState: IFiltersState = {
         ft: false,
         ww: false,
         bs: false
-    }
+    },
+    sort: "profitPercent",
+    sortDirection: "desc"
 }
 
 export const filtersSlice = createSlice({
@@ -115,6 +119,10 @@ export const filtersSlice = createSlice({
         updateQualitiesCheckbox: (state, action: PayloadAction<string>) => {
             const field = action.payload;
             state.qualities[field as keyof IFiltersQualities] = !state.qualities[field as keyof IFiltersQualities];
+        },
+        updateSort: (state, action: PayloadAction<{sort: "fromPlatformPrice" | "toPlatformPrice" | "profit" | "profitPercent", sortDirection: "asc" | "desc"}>) => {
+            state.sort = action.payload.sort;
+            state.sortDirection = action.payload.sortDirection;
         }
     }
 });

@@ -11,12 +11,14 @@ export const ToPlatformPriceFilter = () => {
             <h4 className="font-semibold">Цена второй площадки</h4>
             <div className="flex justify-around space-x-4">
                 <InputWithLabel type="number" label="От" placeholder="₽" value={toPlatform.minPrice}
+                                className="text-right"
                                 onChange={(e) => dispatch(updatePlatformFields({
                                     platform: "toPlatform",
                                     field: "minPrice",
                                     value: e.currentTarget.value
                                 }))}/>
                 <InputWithLabel type="number" label="До" placeholder="₽" value={toPlatform.maxPrice}
+                                className="text-right"
                                 onChange={(e) => dispatch(updatePlatformFields({
                                     platform: "toPlatform",
                                     field: "maxPrice",
